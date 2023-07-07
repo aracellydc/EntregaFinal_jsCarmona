@@ -1,0 +1,8 @@
+[
+    { "nombre": "Manga corta - Azucena", "precio": 20,"imagen": "./img/azucena negro.jpg"},
+    { "nombre": "Manga larga - Cuello Medio", "precio": 30,"imagen": "./img/cuellomediohabano.jpg"},
+    { "nombre": "Manga corta - Off Shoulder", "precio": 18,"imagen": "./img/offnegro.jpg"},
+    { "nombre": "Manga corta - Jazmin", "precio": 22,"imagen": "./img/jazmin.jpg" },
+    { "nombre": "Manga corta - Maffer", "precio": 18,"imagen": "./img/maffer.jpg" },
+    { "nombre": "Manga corta - Tiziana", "precio": 20,"imagen": "./img/tiziana.jpg" }
+]

@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 6px;
+}
+
+/*ENCABEZADO*/
+.encabezado {
+  background-color: rgb(210, 105, 123);
+  padding: 8px 20px;
+}
+.encabezado .logo {
+  width: 90px;
+}
+.encabezado .collapse {
+  width: 900px;
+  flex-wrap: wrap;
+}
+.encabezado .navbar-nav {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+.encabezado .navbar-nav a:hover {
+  color: rgb(110, 4, 4);
+}
+
+
+/*PRINCIPAL*/
+.main {
+  background-image: url("../img/fondo_main.png");
+  background-size: cover;
+}
+
+.cardd {
+  background-color: rgba(190, 188, 188, 0.615);
+  position: absolute;
+  margin-left: 12%;
+  padding: 1% 2% 1% 2%;
+  top: 20%;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+}
+.cardd h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px;
+}
+.cardd .cardd__description {
+  padding: 2px;
+  margin: 15px 2px;
+}
+.cardd .boton {
+  background-color: rgb(210, 105, 123);
+  margin: 20px 50px;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.carousel-item img{
+  width: 95%!important;
+}
+
+.relacion-polos{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.tarjeta-polo{
+margin: 50px;
+}
+
+/*ULTIMO STOCK*/
+main {
+  background-color: rgba(250, 218, 215, 0.785);
+}
+main .container {
+  background-size: cover;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+main .container h2 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.44);
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+main .container .card-body {
+  padding: 5px;
+}
+main .container .btnHover {
+  background-color: rgb(210, 105, 123);
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+
+.principal_nos img {
+  width: 60%;
+  margin: 50px 50px 50px 100px;
+  border-radius: 10px;
+}
+
+
+/*FOOTER*/
+.final {
+  font-size: 15px;
+  background: rgb(224, 30, 47);
+  background: radial-gradient(circle, rgb(224, 30, 47) 9%, rgb(207, 78, 213) 91%);
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+  padding: 30px;
+}
+.final .pagina {
+  display: flex;
+  justify-content: center;
+}
+.final .pagina .icono {
+  text-decoration: none;
+  font-size: 30px;
+  gap: 50px;
+}
+.final .pagina .icono .pagina1 {
+  width: 50px;
+  padding: 10px;
+  flex-grow: 1;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideOfMe</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="shorcut icon " href="./img/logo.jpg" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container2">
+    <header class="encabezado">
+        <nav class="navbar navbar-expand-lg navbar-pink bg-pink">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                <span class="navbar-brand ms-2"><img class="logo" src="./img/logo.jpg" alt="SideOfMe"></span> 
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="./index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                        <a class="boton-link" href="#carro"> <img src="./img/carrito.png" alt="carrito" width="25px"><span id="carrito" class="indicador">0</span></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="cardd">
+                        <h3 class="cardd__title">LLEGAMOS A TI!</h3>
+                        <p class="cardd__description">Tarifas envío Lima y Provincia</p>
+                        <p class="cardd__description">Tarifa Lima: S/10</p>
+                        <p class="cardd__description">Tarifa Provincia: S/14</p>
+                        <p class="boton"><a href="#" >Shop Now!</a></p>
+                    </div>
+                    <img src="./img/main2.jpg" class="d-block w-100" alt="principal1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>SIDE OF ME</h5>
+                        <p>Atuendos que van contigo.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/main3.jpg" class="d-block w-100" alt="principal2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/main4.jpg" class="d-block w-100" alt="principal3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <section id="stock" class="container pt-5">
+            <h2 id="productos">Productos</h2>
+
+            <input type="text" id="filtrarPolo" placeholder="¿Que buscas?">
+            <button id="filtrar">Filtrar </button>
+
+
+        <section class="seccion-polos">
+            <div id="seccion-polos" class="relacion-polos"> <!-- aqui van los productos -->
+            </div>
+        </section>
+        <h5 id="carro">Total Carrito:</h5>
+        <p>El costo total es: S/.<span class="total-carro"></span>. Gracias por tu compra!!</p>
+        <p>Gracias por tu compra!!</p>
+        <input type="submit" id="botonEliminar" for="eliminarProducto" value="Vaciar Lista" class="boton">
+    </main>
+    <script src="./main.js"></script>
+    
+    <footer class="final">
+        <div>
+            <h4>Categorías</h4>
+            <p>Polos</p>
+            <p>Joggers</p>
+            <p>Capas</p>
+        </div>
+        <div>
+            <h4>Información</h4>
+            <p>Preguntas Frecuentes</p>
+            <p>Tabla de medidas</p>
+            <p>Envíos</p>
+        </div>
+        <div>
+            <h4>Contacto</h4>
+            <p>Redes sociales</p>
+            <div class="pagina">
+                <a class="icono scale" target="_blank" href="http://https://www.instagram.com/">
+                    <img class="pagina1" src="./img/instagram.png">
+                </a>
+                <a class="icono scale" target="_blank" href="http://facebook.com">
+                    <img class="pagina1" src="./img/facebook.png"> </a>
+                <a class="icono scale" target="_blank" href="http://whatsaap.com">
+                    <img class="pagina1" src="./img/whatsapp.png"> </a>
+            </div>
+        </div>
+
+        
+    </footer>
+
+    <script 
+        defer
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous">
+    </script>
+    </div>
+</body>
+</html>
